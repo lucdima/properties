@@ -277,7 +277,7 @@ return '
 
 function footerbootstrap(){
 $ret ='';
-$ret .='    <script src="http://code.jquery.com/jquery-latest.js"></script>';
+$ret .='    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript" ></script>';
 $ret .='<!-- Placed at the end of the document so the pages load faster -->';
 $ret .='    <script src="js/bootstrap-transition.js" type="text/javascript" ></script>';
 $ret .='    <script src="js/bootstrap-alert.js" type="text/javascript" ></script>';
