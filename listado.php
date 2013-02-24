@@ -61,7 +61,8 @@ foreach ($ps as $p) {
         echo '<img src="'.$p->href_foto_thumb($p->get_fotop()).'" width="105" height="105" border="0" />';  
       } else echo '<img src="'.NOPICSMALL.'" width="105" height="105" border="0" />';
       
-      if ($p->get_estado()!="Disponible") echo '<div class="'.strtolower($p->get_estado()).'"></div>';
+      // if ($p->get_estado()!="Disponible") echo '<div class="'.strtolower($p->get_estado()).'"></div>';
+      if ($p->get_estado()!="Disponible") echo '<span class="'.strtolower($p->get_estado()).'"></span>';
       echo '</a></div> <!-- cierra foto-->';
       
       echo '<div class="info">';
