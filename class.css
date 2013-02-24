@@ -1,0 +1,474 @@
+
+body {
+  	margin:0 auto;
+   height:100%;
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-size: small;
+   text-align:center;
+   color:#878787;
+   background-color:#f9f9f9;
+   
+}
+#container {
+	min-height:300px;
+   width:950px;
+   margin: 0 auto;
+}
+
+#header {
+    margin:20px  0 20px 0;
+   width:950px;
+   text-align:left;
+   height:100px;
+}
+.menu {
+    float:right;
+	font-size:16px;
+	text-decoration:none;
+	text-align:left;
+	height:38px;
+	line-height:38px;
+	background-color:#eeeded;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-top:33px;
+}
+.menu ul {
+	margin:0;
+	float:left;
+	list-style-type:none; /*con esto quitamos las viñetas*/
+	text-align:left;
+	width:333px;
+	line-height:38px;
+	margin-left:10px;
+
+}
+.menu li {
+	margin:0; /*le quito el margen al elemento de la lista*/
+	text-decoration:none;
+	float:left;
+	line-height:38px;
+	margin-right:50px;
+}
+.menu li a {
+	margin:0;
+	color:#878787; /*mas*/ 
+	width:60px; /*defino el ancho del rectangulo del vinculo*/ 
+	text-decoration:none; /*elimino el subrayado del vínculo*/
+	line-height:38px;
+}
+.menu li a:hover {
+	margin:0;
+	color:#0000aa;
+	text-decoration:none;
+	line-height:38px;
+	}
+.menu li.selected a{
+	margin:0;
+	color:#0000ff;
+	text-decoration:none;
+	line-height:38px;
+	}
+	
+	
+#cuerpo{
+   padding-bottom:70px;   /* Height of the footer */
+   min-height:200px;
+   
+}
+#footer {
+   bottom:0;
+   width:100%;
+   height:70px;   /* Height of the footer */
+   text-align:center;
+   position:relative;
+   float:left;
+   margin-top:10px;
+   background-image:url(img/lin_foot.jpg);
+   background-repeat:repeat-x;
+   color:#252323;
+   padding-top:25px;
+}
+#footer a{
+text-decoration:none;
+color:#252323;
+}
+#content{
+	display:block;
+	width:900px;
+	line-height:18px;
+	
+	}
+	
+.pfiltrada{
+ 	display:block;
+ 	width:950px;
+	float:left;
+	text-align:left;
+}
+
+.encabezado{
+	height:21px;
+	width:929px;
+	background-color:#eeeded;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#0000ff;
+	padding-left:20px;
+}
+.encabezado a{
+text-decoration:none;
+color:#0000aa;
+}
+.foto{
+ display:block;
+ width:105px;
+ height:105px;
+ border: 4px #eeeded solid;
+ float:left;
+ margin:10px;
+ }
+.alquilado{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/alquilado.png);
+ background-repeat:no-repeat;
+ margin:-110px 0 0 -4px;
+ position:absolute;
+}
+
+.reservado{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/reservado.png);
+ background-repeat:no-repeat;
+ margin:-110px 0 0 -4px;
+ position:absolute;
+}
+
+.vendido{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/vendido.png);
+ background-repeat:no-repeat;
+ margin:-110px 0 0 -4px;
+ position:absolute;
+}
+
+.info{
+	width:340px;
+	height:100px;
+	margin:10px;
+	display:block;
+	float:left;
+	font-size:11px;
+}
+.info span{
+	font-weight:bold;
+	
+	}	
+.info p{
+	margin:0;
+	padding:0;
+	line-height:15px;
+	
+}
+.info a {
+	color:#0000ff;
+	text-decoration:none;
+}
+
+.data{
+	width:196px;
+	height:100px;
+	font-weight:bold;
+	float:left;
+	margin:10px 50px;
+}
+.data p{
+ margin:0;
+ padding:0;
+ }
+.iconos {
+width:140px;
+height:100px;
+display:block;
+float:left;
+margin:10px;
+}
+.pics{
+width:50px;
+height:50px;
+background-image:url(img/icon_fotos.png);
+float:left;
+margin:0 10px;
+}
+.pics:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_fotos.png);
+background-position:0 -50px;
+}
+.mapa{
+width:50px;
+height:50px;
+background-image:url(img/icon_mapas.png);
+float:left;
+margin:0 10px;
+}
+.mapa:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_mapas.png);
+background-position:0 -50px;
+}
+.videos{
+width:50px;
+height:50px;
+background-image:url(img/icon_videos.png);
+float:left;
+margin: 0 10px;
+}
+.videos:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_videos.png);
+background-position:0 -50px;
+}
+.plano{
+width:50px;
+height:50px;
+background-image:url(img/icon_plano.png);
+float:left;
+margin: 0 10px;
+}
+.plano:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_plano.png);
+background-position:0 -50px;
+}
+.print{
+width:50px;
+height:50px;
+background-image:url(img/icon_print.png);
+float:left;
+margin: 0 10px;
+}
+.print:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_print.png);
+background-position:0 -50px;
+}
+.sobre{
+width:50px;
+height:50px;
+background-image:url(img/icon_sobre.png);
+float:left;
+margin: 0 10px;
+}
+.sobre:hover {
+width:50px;
+height:50px;
+background-image:url(img/icon_sobre.png);
+background-position:0 -50px;
+}
+
+.panel{
+background-image:url(img/panel.png);
+background-repeat:no-repeat;
+width:900px;
+height:475px;
+margin-top:60px;
+}
+.botones{
+width:295px;
+height:400px;
+display:block;
+float:right;
+text-align:center;
+margin:75px 20px 0 0 ;
+text-decoration:none;
+}
+.botones ul li{
+text-decoration:none;
+margin:30px;
+
+
+}
+.botones ul{
+text-decoration:none;
+list-style:none;
+}
+.botones ul li a{
+text-decoration:none;
+list-style:none;
+}
+
+.balquiler{
+width:150px;
+height:39px;
+background-image:url(img/btn_alq.png);
+display:block;
+}
+.balquiler:hover{
+width:150px;
+height:39px;
+background-image:url(img/btn_alq.png);
+background-position:0 -39px;
+display:block;
+}
+.bventa{
+width:150px;
+height:39px;
+background-image:url(img/btn_venta.png);
+display:block;
+}
+.bventa:hover{
+width:150px;
+height:39px;
+background-image:url(img/btn_venta.png);
+background-position:0 -39px;
+display:block;
+}
+.bcontacto{
+width:150px;
+height:39px;
+background-image:url(img/btn_cont.png);
+display:block;
+}
+.bcontacto:hover{
+width:150px;
+height:39px;
+background-image:url(img/btn_cont.png);
+background-position:0 -39px;
+display:block;
+}
+.dalquilado{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/alquilado.png);
+ background-repeat:no-repeat;
+ margin:-251px 0 0 -4px;
+ position:absolute;
+}
+.dvendido{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/vendido.png);
+ background-repeat:no-repeat;
+ margin:-251px 0 0 -4px;
+ position:absolute;
+}
+.dreservado{
+ display:block;
+ width:105px;
+ height:105px;
+ background-image:url(img/reservado.png);
+ background-repeat:no-repeat;
+ margin:-251px 0 0 -4px;
+ position:absolute;
+}
+.propfoto{
+ display:block;
+ width:330px;
+ height:220px;
+ border: 4px #eeeded solid;
+ float:left;
+ margin:10px;
+ }
+.detalle{
+	width:250px;
+	font-weight:bold;
+	float:left;
+	margin:10px;
+	line-height:20px;
+}
+.detalle p{
+ margin:0;
+ padding:0;
+ }
+ .porpinfo{
+	 width:394px;
+	margin:10px;
+	display:block;
+	float:left;
+	font-size:11px;
+ }
+ 
+.porpinfo span{
+	font-weight:bold;
+	}	
+.porpinfo p{
+	margin:0;
+	padding:0;
+	line-height:14px;	
+}
+.porpinfo a {
+	color:#0000ff;
+	text-decoration:none;
+}
+.propiconos {
+width:140px;
+display:block;
+float:right;
+margin:10px;
+}
+.propencabezado{
+	height:21px;
+	width:928px;
+	background-color:#eeeded;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#0000aa;
+	padding-left:20px;
+}
+.propencabezado a{
+text-decoration:none;
+color:#0000ff;
+}
+.tcontenedor{
+width:950px;
+display:block;
+margin:30px 0;
+float:left;
+line-height:25px;
+font-size:11px;
+}
+.tcontenedor title{
+font-weight:bold;
+color:#0000ff;
+border-bottom:#eeeded solid 2px;
+display:block;
+
+}
+.grupo {
+width:460px;
+display:block;
+float:left;
+}
+
+.tabla{
+width:490px;
+border-bottom:#eeeded solid 1px;
+display:block;
+float:left;
+text-transform:uppercase;
+}
+
+.tabla span{
+font-weight:bold;
+display:block;
+width:200px;
+float:left;
+}
+

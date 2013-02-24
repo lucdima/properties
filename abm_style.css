@@ -1,0 +1,283 @@
+
+html,
+
+body {
+	margin:0 auto;
+   height:100%;
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-size:smaller;
+   text-align:left;
+   color:#878787;
+   background-color:#f9f9f9;
+   }
+   
+.wrapper{
+	width:900px;
+	padding-top:20px;
+	clear:both;
+	margin: auto;
+	}
+.admin{
+	width:900px;
+	padding-top:20px;
+	clear:both;
+	margin: auto;
+	text-align:center !important;
+	}
+.panel {
+	background-image:url(img/panel.png);
+	background-repeat:no-repeat;
+	width:900px;
+	height:475px;
+	margin-top:60px;
+
+}
+.ingreso {
+	width:295px;
+	height:400px;
+	display:block;
+	float:right;
+	text-align:center;
+	margin:75px 20px 0 0 ;
+}
+a {
+	text-decoration:none;
+	color:#0000cc;
+	font-size:14px;
+}
+li{
+
+	color:#000000;
+	}
+table, td
+{
+    border-color: #eeeded;
+    border-style: solid;
+	font-size:14px;
+}
+
+table
+{
+    border-width: 0 0 2px 2px;
+    border-spacing: 0;
+    border-collapse: collapse;
+	
+}
+table img{
+	border:4px #EEEDED solid;
+}
+td
+{
+    margin: 0;
+    padding: 4px;
+    border-width: 2px 2px 0 0;
+    background-color: #FFFFFF;
+}
+p{
+	font-size:13px;
+	line-height:18px;
+	
+	}
+h1 {
+	font-size:22px;
+	}
+h2 {
+	font-size:15px;
+	margin:5px 0;
+	color:#0000cc;
+	}
+.logo{
+	width:100%;
+	height:84px;
+	display:block;
+	
+		}
+form{
+padding:10px 0;}
+form label {
+	line-height:28px;
+	font-size:14px;
+}
+
+.button{
+	background-color:#3333ff;
+	color:#FFFFFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-weight:bold;
+	margin:5px 0;
+	padding:5px 10px;
+	border:#000000 solid 1px;
+	cursor:pointer;
+}
+.button:hover{
+	background-color:#000099;	
+}
+#detalles {
+	background-color:#ffffff;
+	border:4px #666666 solid;
+	padding:20px;
+	font-size:13px;
+	width:500px;
+}
+
+/******* FORM *******/
+#customForm{
+	padding: 0 10px 10px;
+}
+#customForm label{
+	display: block;
+	color: #797979;
+	font-weight: 700;
+	line-height: 1.4em;
+	width:250px;
+}
+
+#customForm label.informacion{
+	display: block;
+	color: #505050;
+	font-weight: 700;
+	line-height: 1.4em;
+	width:800px;
+}
+
+#customForm label.codtel{
+	display: block;
+	color: #797979;
+	font-weight: 700;
+	line-height: 1.4em;
+	width:100px;
+}
+
+#customForm input{
+	width: 750px;
+	padding: 6px;
+	color: #0000aa;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	border: 1px solid #cecece;
+}
+
+#customForm input.big{
+	width: 750px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 24px;
+	border: 1px solid #cecece;
+}
+
+#customForm input.small{
+	width: 170px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 24px;
+	border: 1px solid #cecece;
+}
+
+#customForm input.small2{
+	width: 250px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 18px;
+	/* border: 1px solid #cecece; */
+}
+
+#customForm input.codtel{
+	width: 75px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 24px;
+	border: 1px solid #cecece;
+}
+
+#customForm input.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#customForm textarea{
+	width: 750px;
+	height: 80px;
+	padding: 6px;
+	color: #adaeae;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 14px;
+	border: 1px solid #cecece;
+}
+#customForm textarea.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#customForm div{
+	margin-bottom: 15px;
+}
+#customForm div span{
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 11px;
+	font-style: italic;
+}
+#customForm div span.error{
+	color: #e46c6e;
+}
+#customForm #send{
+	background: #999999;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	width:350px;
+}
+#customForm #send:hover{
+	background: #0033aa;
+}
+
+#customForm td.titulos{
+ color: #333333;
+    font-weight: 700;
+    line-height: 1.4em;
+    background-color:#CCCCCC;
+	
+text-align:center;
+
+/*
+font-size:12px;
+background-color:#CCCCCC;
+font-style: bold;
+text-align:center;
+*/}
+
+#customForm td.datos{
+font-size:10px;
+text-align:center;
+
+
+
+}
+
+
+#error{
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+#error ul li strong{
+	color: #e46c6d;
+}
+#error.valid ul li strong{
+	color: #93d72e;
+}
+/******* /FORM *******/
