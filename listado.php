@@ -58,10 +58,9 @@ foreach ($ps as $p) {
       echo '<div class="foto"><a href="propiedad.php?idp='.$p->get_idpropiedad().'">';
       
       if (file_exists($p->href_foto_thumb($p->get_fotop()))) {
-        echo '<img src="'.$p->href_foto_thumb($p->get_fotop()).'" width="105" height="105" border="0" />';  
-      } else echo '<img src="'.NOPICSMALL.'" width="105" height="105" border="0" />';
+        echo '<img src="'.$p->href_foto_thumb($p->get_fotop()).'" width="105" height="105" border="0" title="'.$p->get_nombre();.' alt="'.$p->get_nombre();.'" />';  
+      } else echo '<img src="'.NOPICSMALL.'" width="105" height="105" border="0" title="'.$p->get_nombre();.' alt="'.$p->get_nombre();.'"/>';
       
-      // if ($p->get_estado()!="Disponible") echo '<div class="'.strtolower($p->get_estado()).'"></div>';
       if ($p->get_estado()!="Disponible") echo '<span class="'.strtolower($p->get_estado()).'"></span>';
       echo '</a></div> <!-- cierra foto-->';
       
@@ -87,19 +86,19 @@ foreach ($ps as $p) {
       echo '<div class="iconos">';
       foreach ($p->get_fotos() as $k => $f) {          
           echo '<a href="'.$p->href_foto_media($f->get_idfoto()).'" rel="prettyPhoto[gallery2]" title="'.$p->get_nombre().'">';
-          if ($k==0) echo '<div class="pics"></div>';
+          if ($k==0) echo '<span class="pics"></span>';
           echo '</a>';
         }
       echo '<!-- cierra pics-->';
          
       if ($p->get_mapa()!="") {
-      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&iframe=true&width=475&height=430" rel="prettyPhoto[iframe]"> <div class="mapa"></div></a><!-- cierra mapa-->';
+      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&iframe=true&width=475&height=430" rel="prettyPhoto[iframe]"> <span class="mapa"></span></a><!-- cierra mapa-->';
       }
       
       foreach ($p->get_videos() as $k => $f) {
         // $fid=$f->get_idvideo();
         echo '<a href="'.$f->get_url().'" rel="prettyPhoto[galleryv]" title="'.$p->get_nombre().'">';
-        if ($k==0) echo '<div class="videos"></div>';
+        if ($k==0) echo '<span class="videos"></span>';
         echo '</a>';
         }
       echo '<!-- cierra videos-->';
@@ -153,8 +152,9 @@ echo '
 <!-- cierra content-->
 </div>  
 <!-- cierra conteiner-->';
-
+echo '</div> ';
 echo footer();
+
 echo lightclonestart();
 echo endpage();
 
