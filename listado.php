@@ -58,8 +58,8 @@ foreach ($ps as $p) {
       echo '<div class="foto"><a href="propiedad.php?idp='.$p->get_idpropiedad().'">';
       
       if (file_exists($p->href_foto_thumb($p->get_fotop()))) {
-        echo '<img src="'.$p->href_foto_thumb($p->get_fotop()).'" width="105" height="105" border="0" title="'.$p->get_nombre();.' alt="'.$p->get_nombre();.'" />';  
-      } else echo '<img src="'.NOPICSMALL.'" width="105" height="105" border="0" title="'.$p->get_nombre();.' alt="'.$p->get_nombre();.'"/>';
+        echo '<img src="'.$p->href_foto_thumb($p->get_fotop()).'" width="105" height="105" border="0" title="'.$p->get_nombre().' alt="'.$p->get_nombre().'" />';  
+      } else echo '<img src="'.NOPICSMALL.'" width="105" height="105" border="0" title="'.$p->get_nombre().' alt="'.$p->get_nombre().'"/>';
       
       if ($p->get_estado()!="Disponible") echo '<span class="'.strtolower($p->get_estado()).'"></span>';
       echo '</a></div> <!-- cierra foto-->';
