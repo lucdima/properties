@@ -24,6 +24,6 @@ echo endheader();
  			</div>
 		</div>
 	</div>
-<?php footer() ?>
+<?php echo footer() ?>
 </div>
-<?php endpage() ?>
+<?php echo endpage() ?>
