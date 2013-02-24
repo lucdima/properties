@@ -34,22 +34,10 @@ if (($_SERVER['SERVER_ADDR']=='127.0.0.1') OR ($_SERVER['SERVER_ADDR']=="::1")) 
 	}
 }
 
-
-
-
 // Charset
 define('CHARSET','utf-8');
-define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=UTF-8">');
+define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=UTF-8" />');
 define('MYSQLCHARSET','utf8');
-
-/*
-define('CHARSET','8859-1');
-define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=8859-1">');
-define('MYSQLCHARSET','latin1');
-*/
-
-
-
 
 // Admin
 define('USER','admin');

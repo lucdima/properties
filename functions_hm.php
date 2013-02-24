@@ -190,10 +190,10 @@ return '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w
 '.METACHARSET.'
 
 
-<link href="abm_style.css" rel="stylesheet" type="text/css">
+<link href="abm_style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="validation.js"></script>
-<script type="text/javascript" src="scripts/animatedcollapse.js"> </script> 
+<script type="text/javascript" src="scripts/animatedcollapse.js"></script> 
 <title>'.$t.'</title>';	
 }
 
@@ -251,7 +251,7 @@ return '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w
 
 function lightboxclone() {
 	return '<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8"/>
     <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>';
 }
 
@@ -272,7 +272,7 @@ function headermenu($o=0) {
 function headbootstrap(){
 return '
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">';
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />';
 }
 
 function footerbootstrap(){
