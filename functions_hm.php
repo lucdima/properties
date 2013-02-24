@@ -212,7 +212,7 @@ function endheader(){
 }
 
 function footer(){
-	return '<div id="footer"><img src="img/sobre.png" width="19" height="12" border="0" /> <a href="mailto:#">e-mail de contacto</a><img src="img/phone.png" style="margin-left:30px;" width="12" height="18" border="0" /> (011) 4888-8888<img src="img/dir.png" style="margin-left:30px;" width="21" height="21" border="0" /> Dirección<br /><br />
+	return '<div id="footer"><img src="img/sobre.png" width="19" height="12" border="0" alt="'._("sobre").'" /> <a href="mailto:#">e-mail de contacto</a><img src="img/phone.png" style="margin-left:30px;" width="12" height="18" border="0" alt="'._("teléfono").'"/> (011) 4888-8888<img src="img/dir.png" style="margin-left:30px;" width="21" height="21" border="0" alt="'._("dirección").'" /> Dirección<br /><br />
  <span style="color:#878787;">&copy; 2012 Properties - Todos los derechos reservados</span>
  </div>  
  <!-- cierra footer-->';
@@ -279,19 +279,19 @@ function footerbootstrap(){
 $ret ='';
 $ret .='    <script src="http://code.jquery.com/jquery-latest.js"></script>';
 $ret .='<!-- Placed at the end of the document so the pages load faster -->';
-$ret .='    <script src="js/bootstrap-transition.js"></script>';
-$ret .='    <script src="js/bootstrap-alert.js"></script>';
-$ret .='    <script src="js/bootstrap-modal.js"></script>';
-$ret .='    <script src="js/bootstrap-dropdown.js"></script>';
-$ret .='    <script src="js/bootstrap-scrollspy.js"></script>';
-$ret .='    <script src="js/bootstrap-tab.js"></script>';
-$ret .='    <script src="js/bootstrap-tooltip.js"></script>';
-$ret .='    <script src="js/bootstrap-popover.js"></script>';
-$ret .='    <script src="js/bootstrap-button.js"></script>';
-$ret .='    <script src="js/bootstrap-collapse.js"></script>';
-$ret .='    <script src="js/bootstrap-carousel.js"></script>';
-$ret .='    <script src="js/bootstrap-typeahead.js"></script>';
-$ret .='    <script src="js/bootstrap-affix.js"></script>';
+$ret .='    <script src="js/bootstrap-transition.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-alert.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-modal.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-dropdown.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-scrollspy.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-tab.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-tooltip.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-popover.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-button.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-collapse.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-carousel.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-typeahead.js" type="text/javascript" ></script>';
+$ret .='    <script src="js/bootstrap-affix.js" type="text/javascript" ></script>';
 return $ret;
 }
 
