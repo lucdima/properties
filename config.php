@@ -10,14 +10,14 @@ if (($_SERVER['SERVER_ADDR']=='127.0.0.1') OR ($_SERVER['SERVER_ADDR']=="::1")) 
 	else {
 	if ($_SERVER['SERVER_ADDR']=='173.254.20.191') {
 		define("SERVER","localhost");
-		define("DATABASE","centras3_hm");
-		define("DATABASEUSER","centras3_hm");
-		define("DATABASEPASSWORD","I1A+O(W@(d.*");
+		define("DATABASE","centras3_prop");
+		define("DATABASEUSER","centras3_prop");
+		define("DATABASEPASSWORD","prop2013");
 		define("MAILERCLASSPATH","mailer5.0.0/class.phpmailer.php");	
 		define("SMTPSERVER","localhost");
 		define("SMTPUSER","");
 		define("SMTPPASS","");
-		define("ABSHTTPPATH","http://www.centraldeactores.com/homemakers/");
+		define("ABSHTTPPATH","http://www.developia.com.ar/properties/");
 	} else {
 	if ($_SERVER['SERVER_ADDR']=='200.26.189.11') {
 		define("SERVER","localhost");
