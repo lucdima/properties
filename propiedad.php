@@ -86,7 +86,7 @@ foreach ($p->get_fotos() as $k => $f) {
         }
         
        if ($p->get_mapa()!="") {
-      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&amp;iframe=true&amp;width=475&amp;height=430" rel="prettyPhoto[iframe]"> <div class="mapa"></div></a><!-- cierra mapa-->';
+      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&amp;iframe=true&amp;width=475&amp;height=430" rel="prettyPhoto[iframe]"> <span class="mapa"></span></a><!-- cierra mapa-->';
       }
 
       foreach ($p->get_videos() as $k => $f) {
@@ -104,10 +104,14 @@ foreach ($p->get_fotos() as $k => $f) {
         else {
        //   echo '<a href="#"><div class="plano"></div></a><!-- cierra plano-->';
         }
-      echo '<a href="#"> <span class="print"></span></a>
+     
+    /* Imprimir y consultar. por el momento deshabiltiados    
+    echo '<a href="#"> <span class="print"></span></a>
     <a href="#"';
     echo $p->get_nombre().'\'">';
     echo '<span class="sobre"></span></a>';
+    */
+
     echo '</div>';'
     <!-- cierra iconos derecha-->';
  ?>
@@ -126,7 +130,7 @@ echo '</div>';
 
 
  <div class="tcontenedor">
- <div><title>Detalles de la propiedad</title></div>
+ <div><h4>Detalles de la propiedad</h4></div>
  
 
 
