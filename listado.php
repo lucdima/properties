@@ -92,7 +92,7 @@ foreach ($ps as $p) {
       echo '<!-- cierra pics-->';
          
       if ($p->get_mapa()!="") {
-      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&iframe=true&width=475&height=430" rel="prettyPhoto[iframe]"> <span class="mapa"></span></a><!-- cierra mapa-->';
+      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&amp;iframe=true&amp;width=475&amp;height=430" rel="prettyPhoto[iframe]"> <span class="mapa"></span></a><!-- cierra mapa-->';
       }
       
       foreach ($p->get_videos() as $k => $f) {
