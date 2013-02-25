@@ -455,7 +455,7 @@ class Video{
 	private $_embed;
 
 	function get_url() {
-		return $this->_url;
+		return urlencode($this->_url);
 	}
 	function set_url($u) {
 		$this->_url=$u;
