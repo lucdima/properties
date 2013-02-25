@@ -1,4 +1,21 @@
 <?php
+/*
+Properties!
+Author: (C) 2013 - Lucas Dima lucdima@gmail.com
+License 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 function superscaleimage($source,$dest,$maxancho,$maxalto,$quality)
     {
 
@@ -212,8 +229,8 @@ function endheader(){
 }
 
 function footer(){
-	return '<div id="footer"><img src="img/sobre.png" width="19" height="12" border="0" alt="'._("sobre").'" /> <a href="mailto:#">e-mail de contacto</a><img src="img/phone.png" style="margin-left:30px;" width="12" height="18" border="0" alt="'._("teléfono").'"/> (011) 4888-8888<img src="img/dir.png" style="margin-left:30px;" width="21" height="21" border="0" alt="'._("dirección").'" /> Dirección<br /><br />
- <span style="color:#878787;">&copy; 2012 Properties - Todos los derechos reservados</span>
+	return '<div id="footer"><img src="img/sobre.png" width="19" height="12" border="0" alt="'._("sobre").'" /> <a href="mailto:'.EMAIL.'">e-mail de contacto</a><img src="img/phone.png" style="margin-left:30px;" width="12" height="18" border="0" alt="'._("teléfono").'"/> '.TEL.'<img src="img/dir.png" style="margin-left:30px;" width="21" height="21" border="0" alt="'._("dirección").'" /> '.DIR.'<br /><br />
+ <span style="color:#878787;">&copy; 2013 Properties - Todos los derechos reservados</span>
  </div>  
  <!-- cierra footer-->';
 }
@@ -264,7 +281,7 @@ function headermenu($o=0) {
 	$sel[$o]='class="selected"';
 	$ret .='<li '.$sel[1].'><a href="listado.php?o=1">Alquiler</a></li>';
 	$ret .='<li '.$sel[2].'><a href="listado.php?o=2">Venta</a></li>';
-	$ret .='<li '.$sel[3].'><a href="#">Contacto</a></li>';
+	$ret .='<li '.$sel[3].'><a href="mailto:'.EMAIL.'">Contacto</a></li>';
 	$ret .='</ul></div></div>';
 	return $ret;
 }
