@@ -10,14 +10,14 @@ if (($_SERVER['SERVER_ADDR']=='127.0.0.1') OR ($_SERVER['SERVER_ADDR']=="::1")) 
 	else {
 	if ($_SERVER['SERVER_ADDR']=='173.254.20.191') {
 		define("SERVER","localhost");
-		define("DATABASE","centras3_hm");
-		define("DATABASEUSER","centras3_hm");
-		define("DATABASEPASSWORD","I1A+O(W@(d.*");
+		define("DATABASE","centras3_prop");
+		define("DATABASEUSER","centras3_prop");
+		define("DATABASEPASSWORD","prop2013");
 		define("MAILERCLASSPATH","mailer5.0.0/class.phpmailer.php");	
 		define("SMTPSERVER","localhost");
 		define("SMTPUSER","");
 		define("SMTPPASS","");
-		define("ABSHTTPPATH","http://www.centraldeactores.com/homemakers/");
+		define("ABSHTTPPATH","http://www.developia.com.ar/properties/");
 	} else {
 	if ($_SERVER['SERVER_ADDR']=='200.26.189.11') {
 		define("SERVER","localhost");
@@ -34,19 +34,11 @@ if (($_SERVER['SERVER_ADDR']=='127.0.0.1') OR ($_SERVER['SERVER_ADDR']=="::1")) 
 	}
 }
 
-
-
-
 // Charset
 define('CHARSET','utf-8');
-define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=UTF-8">');
+define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=UTF-8" />');
 define('MYSQLCHARSET','utf8');
 
-/*
-define('CHARSET','8859-1');
-define('METACHARSET','<meta http-equiv="content-type" content="text/html; charset=8859-1">');
-define('MYSQLCHARSET','latin1');
-*/
 //Client
 define("EMAIL","#");
 define("TEL","(011) 888-8888");
@@ -54,7 +46,7 @@ define("DIR","Dirección");
 
 // Admin
 define('USER','admin');
-define('PASSWORD','I1A+O(W@(d.*');
+define('PASSWORD','1234');
 
 // Fotos
 define("FOTOSORIGINALES","./fotos/originales/");
