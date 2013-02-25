@@ -8,6 +8,16 @@ if (!isset($_GET['o'])) $_GET['o']=1;
 
 echo startheader("Properties - Propiedades en alquiler y venta en la Ciudad de Buenos Aires. Argentina");
 echo lightboxclone();
+
+?>
+<style type="text/css">
+.curr{
+    border:1px solid #ddd;
+    padding:3px;
+}
+</style>
+<?php
+
 echo endheader();
 
 ?>
@@ -105,7 +115,7 @@ foreach ($ps as $p) {
       
       // echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto"><div class="plano"></div></a><!-- cierra plano-->';
       if ($p->get_plano()!="") {
-        echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto" title="Plano '.$p->get_nombre().'"><div class="plano"></div></a><!-- cierra plano-->';
+        echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto" title="Plano '.$p->get_nombre().'"><span class="plano"></span></a><!-- cierra plano-->';
       }
         else {
           // echo '<a href="#"><div class="plano"></div></a><!-- cierra plano-->';
@@ -128,23 +138,16 @@ $prev_page = $curr_page > 1 ? $curr_page - 1 : null;
 $offset = ($curr_page - 1) * $limit;
 $items = array_slice($items, $offset, $limit);
 
-?>
-<style>
-.curr{
-    border:1px solid #ddd;
-    padding:3px;
-}
-</style>
 
 
-<? if($prev_page) { 
-    echo '<a href="listado.php?page='.$prev_page.'&o='.$_GET['o'].'"> << </a>';
+if($prev_page) { 
+    echo '<a href="listado.php?page='.$prev_page.'&amp;o='.$_GET['o'].'"> << </a>';
 }
  for($i = 1; $i <= $qty_pages; $i++) {
-    echo '<a href="listado.php?page='.$i.'&o='.$_GET['o'].'" class="'.($i == $curr_page ? 'curr' : '').'"> '.$i.' </a>';
+    echo '<a href="listado.php?page='.$i.'&amp;o='.$_GET['o'].'" class="'.($i == $curr_page ? 'curr' : '').'"> '.$i.' </a>';
  }
  if($next_page) {
-    echo '<a href="listado.php?page='.$next_page.'&o='.$_GET['o'].'"> >> </a>';
+    echo '<a href="listado.php?page='.$next_page.'&amp;o='.$_GET['o'].'"> >> </a>';
 }
 
 
