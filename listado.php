@@ -113,7 +113,7 @@ foreach ($ps as $p) {
         }
       echo '<!-- cierra videos-->';
       
-      // echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto"><div class="plano"></div></a><!-- cierra plano-->';
+
       if ($p->get_plano()!="") {
         echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto" title="Plano '.$p->get_nombre().'"><span class="plano"></span></a><!-- cierra plano-->';
       }
