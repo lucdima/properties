@@ -39,7 +39,7 @@ if (count($p->get_fotos())==0) {
   if ($p->get_estado!="Disponible") {
     $cl='<div class="d'.strtolower($p->get_estado()).'"></div>';
   }
-  echo '<img src="'.NOPICBIG.'" width="330" height="248" border="0" />';
+  echo '<img src="'.NOPICBIG.'" width="330" height="248" border="0" alt="'.$p->get_nombre().'" />';
   echo $cl;
 } else {
 foreach ($p->get_fotos() as $k => $f) {          
@@ -49,7 +49,7 @@ foreach ($p->get_fotos() as $k => $f) {
     }
   }
   echo '<a href="'.$p->href_foto_media($f->get_idfoto()).'" rel="prettyPhoto[gallery2]">';
-  if ($k==0) echo '<img src="'.$p->href_foto_media($f->get_idfoto()).'"  width="330" height="248" border="0" />';
+  if ($k==0) echo '<img src="'.$p->href_foto_media($f->get_idfoto()).'"  width="330" height="248" border="0" alt="'.$p->get_nombre().'" />';
   echo '</a>';
   echo $cl;  
 }
@@ -81,33 +81,33 @@ foreach ($p->get_fotos() as $k => $f) {
    echo '<div class="propiconos">';
       foreach ($p->get_fotos() as $k => $f) {          
           echo '<a href="'.$p->href_foto_media($f->get_idfoto()).'" rel="prettyPhoto[gallery1]">';
-          if ($k==0) echo '<div class="pics"></div>';
+          if ($k==0) echo '<span class="pics"></span>';
           echo '</a>';
         }
         
        if ($p->get_mapa()!="") {
-      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&iframe=true&width=475&height=430" rel="prettyPhoto[iframe]"> <div class="mapa"></div></a><!-- cierra mapa-->';
+      echo '<a href="mapa.php?idp='.$p->get_idpropiedad().'&amp;iframe=true&amp;width=475&amp;height=430" rel="prettyPhoto[iframe]"> <div class="mapa"></div></a><!-- cierra mapa-->';
       }
 
       foreach ($p->get_videos() as $k => $f) {
         // $fid=$f->get_idvideo();
         echo '<a href="'.$f->get_url().'" rel="prettyPhoto[galleryv]" title="'.$p->get_nombre().'">';
-        if ($k==0) echo '<div class="videos"></div>';
+        if ($k==0) echo '<span class="videos"></span>';
         echo '</a>';
         }
       echo '<!-- cierra videos-->';
       
       // echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto"><div class="plano"></div></a><!-- cierra plano-->';
       if ($p->get_plano()!="") {
-        echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto" title="Plano '.$p->get_nombre().'"><div class="plano"></div></a><!-- cierra plano-->';
+        echo '<a href="'.$p->href_foto_media($p->get_plano()).'" rel="prettyPhoto" title="Plano '.$p->get_nombre().'"><span class="plano"></span></a><!-- cierra plano-->';
       }
         else {
        //   echo '<a href="#"><div class="plano"></div></a><!-- cierra plano-->';
         }
-      echo '<a href="#"> <div class="print"></div></a>
+      echo '<a href="#"> <span class="print"></span></a>
     <a href="#"';
     echo $p->get_nombre().'\'">';
-    echo '<div class="sobre"></div></a>';
+    echo '<span class="sobre"></span></a>';
     echo '</div>';'
     <!-- cierra iconos derecha-->';
  ?>
